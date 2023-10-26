@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        body{
+            background-image: url("https://img.freepik.com/free-vector/gradient-light-peach-background_23-2150246342.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697068800&semt=ais");
+            width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+  flex-direction: row;
+        }
+
+        header{
+
+    position: fixed;
+    top: 0;
+    left: 40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 100px;
+}
+.logo h2{
+    font-weight: 400;
+    font-size: 16px;
+    color: #ef5e41;
+}
+#nav-items{
+    display: flex;
+    align-items: center;
+}
+#nav-items li{
+    font-weight: 600;
+    font-size: 18px;
+    list-style: none;
+    margin-left: 100px;
+    text-transform: capitalize;  
+    cursor: pointer;
+}
+.active{
+    color: #ef5e41;
+}
+ 
+.product-card {
+    margin: 150px;
+    border-radius: 10px;
+  max-width: 12em;
+  background-color: #da6a6a;
+  padding: 1em;
+  box-shadow: 0 5px 5px #e1e1e1;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.product-card h4 {
+  font-size: 1.3em;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+.product-card div {
+  font-size: 1.2em;
+  
+  justify-content: space-between;
+  align-items: center;
+}
+.product-card button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-card:hover {
+  background-color: rgb(187, 0, 47);
+  color: #fff;
+}
+.product-card:hover button {
+  color: #000;
+  background-color: #fff;
+}
+@media screen and (max-width: 576px) {
+  .product-card {
+    font-size: 0.9em;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>DrinkCart</h1>
+        </div>
+        <div class="nav">
+            <ul id="nav-items">
+                <a href="./index.html"><li >home</li></a>
+                <li>about</li>
+                <li class="active">products</li>
+                <li>contact</li>
+            </ul>
+        </div>
+    </header>
+    <div class="product-card">
+        <img src="https://cdn.dotpe.in/longtail/item_thumbnails/8318990/GLICvi2n.webp" alt="">
+        <h4>G-Juice</h4>
+        <div>
+            <span>₹70</span>
+            <button>+</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://cdn.dotpe.in/longtail/item_thumbnails/8318990/P0WMYBTV.webp" alt="">
+        <h4>R-Juice</h4>
+        <div>
+            <span>₹70</span>
+            <button>+</button>
+        </div>
+    </div>
+
+</body>
+</html>
